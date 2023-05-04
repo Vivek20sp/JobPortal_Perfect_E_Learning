@@ -1,0 +1,223 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:ignore="UselessParent">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/outline_business_center_24"
+                tools:ignore="ImageContrastCheck" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/henry_wilson"
+                android:paddingStart="10dp"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                tools:ignore="RtlSymmetry" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/applied_for_a_job"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:paddingStart="5dp"
+                tools:ignore="RtlSymmetry" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/product_designer"
+                android:paddingStart="5dp"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/dark_blue"
+                tools:ignore="RtlSymmetry" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/outline_business_center_242"
+                tools:ignore="ImageContrastCheck" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/raul_costa"
+                android:paddingStart="10dp"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                tools:ignore="RtlSymmetry" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/applied_for_a_job"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:paddingStart="5dp"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:paddingStart="5dp"
+                android:text="@string/product_manager"
+                android:textColor="#2E7D32"
+                tools:ignore="RtlSymmetry" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/outline_business_center_24"
+                tools:ignore="ImageContrastCheck" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/jack_milk"
+                android:paddingStart="10dp"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                tools:ignore="RtlSymmetry" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/applied_for_a_job"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:paddingStart="5dp"
+                tools:ignore="RtlSymmetry" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/technical_architect"
+                android:paddingStart="5dp"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/dark_blue"
+                tools:ignore="RtlSymmetry" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/outline_business_center_242"
+                tools:ignore="ImageContrastCheck" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/michel_arian"
+                android:paddingStart="10dp"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                tools:ignore="RtlSymmetry" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/applied_for_a_job"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:paddingStart="5dp"
+                tools:ignore="RtlSymmetry" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:paddingStart="5dp"
+                android:text="@string/software_engineer"
+                android:textColor="#2E7D32"
+                tools:ignore="RtlSymmetry" />
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:padding="5dp">
+
+            <ImageView
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:contentDescription="@string/todo"
+                android:src="@drawable/outline_business_center_24"
+                tools:ignore="ImageContrastCheck" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/wade_warren"
+                android:paddingStart="10dp"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:textStyle="bold"
+                android:textColor="@color/black"
+                tools:ignore="RtlSymmetry" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/applied_for_a_job"
+                android:layout_gravity="center_vertical"
+                android:gravity="center_vertical"
+                android:paddingStart="5dp"
+                tools:ignore="RtlSymmetry" />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="40dp"
+                android:text="@string/web_developer"
+                android:paddingStart="5dp"
+                android:gravity="center_vertical"
+                android:layout_gravity="center_vertical"
+                android:textColor="@color/dark_blue"
+                tools:ignore="RtlSymmetry" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>

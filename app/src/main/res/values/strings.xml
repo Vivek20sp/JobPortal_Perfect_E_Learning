@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Demo 2 Perfect E Learning</string>
+    <string name="todo">TODO</string>
+    <string name="_22">22</string>
+    <string name="posted_jobs">Posted Jobs</string>
+    <string name="_9382">9382</string>
+    <string name="application">Application</string>
+    <string name="_32">32</string>
+    <string name="shortlist">Shortlist</string>
+    <string name="henry_wilson">Henry Wilson</string>
+    <string name="applied_for_a_job">applied for a job</string>
+    <string name="product_designer">Product Designer</string>
+    <string name="raul_costa">Raul Costa</string>
+    <string name="product_manager">Product Manager</string>
+    <string name="web_developer">Web Developer</string>
+    <string name="wade_warren">Wade Warren</string>
+    <string name="software_engineer">Software Engineer</string>
+    <string name="michel_arian">Michel Arian</string>
+    <string name="technical_architect">Technical Architect</string>
+    <string name="jack_milk">Jack Milk</string>
+    <string name="_74">74</string>
+    <string name="messages">Messages</string>
+    <string-array name="Months">
+        <item>Last 6 Months</item>
+        <item>Last 12 Months</item>
+        <item>Last 16 Months</item>
+        <item>Last 24 Months</item>
+        <item>Last 5 Years</item>
+    </string-array>
+</resources>

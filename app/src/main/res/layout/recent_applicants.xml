@@ -1,0 +1,791 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:elevation="14dp"
+            android:background="@drawable/border2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher"
+                    android:padding="20dp"
+                    android:id="@+id/featured_jobImgView"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Darlene Robertson"
+                        android:textColor="@color/textColour"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:layout_marginTop="30dp"
+                        android:id="@+id/featured_jobTitleTxt"/>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Ui Designer"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="16dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginLeft="2dp"
+                            android:id="@+id/companyTxt"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_outline_location_on_24"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="6dp"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="London,uk"
+                            android:textColor="@color/textGrey"
+                            android:textSize="16dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginLeft="1dp"
+                            android:id="@+id/locationTxt"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="3dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rounded_corner"
+                            android:textColor="@color/textGrey"
+                            android:textSize="13sp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:paddingTop="2dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="15dp"
+                            android:paddingBottom="2dp"
+                            android:text="App"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rounded_corner"
+                            android:textColor="@color/textGrey"
+                            android:textSize="13sp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:paddingTop="2dp"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginRight="10dp"
+                            android:paddingBottom="2dp"
+                            android:text="Desgin"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rounded_corner"
+                            android:textColor="@color/textGrey"
+                            android:textSize="13sp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:paddingTop="2dp"
+                            android:layout_marginRight="10dp"
+                            android:paddingBottom="2dp"
+                            android:text="Digital"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="4dp">
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:elevation="14dp"
+            android:background="@drawable/border2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher"
+                    android:padding="20dp"
+                    android:id="@+id/featured_jobImgView1"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Wade Warren"
+                        android:textColor="@color/textColour"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:layout_marginTop="30dp"
+                        android:id="@+id/featured_jobTitleTxt1"/>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Developer"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="16dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginLeft="2dp"
+                            android:id="@+id/companyTxt1"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_outline_location_on_24"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="6dp"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="London,uk"
+                            android:textColor="@color/textGrey"
+                            android:textSize="16dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginLeft="1dp"
+                            android:id="@+id/locationTxt1"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="3dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rounded_corner"
+                            android:textColor="@color/textGrey"
+                            android:textSize="13sp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:paddingTop="2dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="15dp"
+                            android:paddingBottom="2dp"
+                            android:text="App"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rounded_corner"
+                            android:textColor="@color/textGrey"
+                            android:textSize="13sp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:paddingTop="2dp"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginRight="10dp"
+                            android:paddingBottom="2dp"
+                            android:text="Desgin"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rounded_corner"
+                            android:textColor="@color/textGrey"
+                            android:textSize="13sp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:paddingTop="2dp"
+                            android:layout_marginRight="10dp"
+                            android:paddingBottom="2dp"
+                            android:text="Digital"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="4dp">
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:elevation="14dp"
+            android:background="@drawable/border2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher"
+                    android:padding="20dp"
+                    android:id="@+id/featured_jobImgView2"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Leslie Alexander"
+                        android:textColor="@color/textColour"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:layout_marginTop="30dp"
+                        android:id="@+id/featured_jobTitleTxt2"/>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Digital Marketer"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="16dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginLeft="2dp"
+                            android:id="@+id/companyTxt2"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_outline_location_on_24"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="6dp"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="London,uk"
+                            android:textColor="@color/textGrey"
+                            android:textSize="16dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginLeft="1dp"
+                            android:id="@+id/locationTxt2"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="3dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rounded_corner"
+                            android:textColor="@color/textGrey"
+                            android:textSize="13sp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:paddingTop="2dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="15dp"
+                            android:paddingBottom="2dp"
+                            android:text="App"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rounded_corner"
+                            android:textColor="@color/textGrey"
+                            android:textSize="13sp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:paddingTop="2dp"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginRight="10dp"
+                            android:paddingBottom="2dp"
+                            android:text="Desgin"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rounded_corner"
+                            android:textColor="@color/textGrey"
+                            android:textSize="13sp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:paddingTop="2dp"
+                            android:layout_marginRight="10dp"
+                            android:paddingBottom="2dp"
+                            android:text="Digital"/>
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="4dp">
+            </LinearLayout>
+        </LinearLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:elevation="14dp"
+            android:background="@drawable/border2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher"
+                    android:padding="20dp"
+                    android:id="@+id/featured_jobImgView3"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Floyd Miles"
+                        android:textColor="@color/textColour"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:layout_marginTop="30dp"
+                        android:id="@+id/featured_jobTitleTxt3"/>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Front-end Developer"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="16dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginLeft="2dp"
+                            android:id="@+id/companyTxt3"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_outline_location_on_24"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="6dp"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="London,uk"
+                            android:textColor="@color/textGrey"
+                            android:textSize="16dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginLeft="1dp"
+                            android:id="@+id/locationTxt3"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="3dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rounded_corner"
+                            android:textColor="@color/textGrey"
+                            android:textSize="13sp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:paddingTop="2dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="15dp"
+                            android:paddingBottom="2dp"
+                            android:text="App"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rounded_corner"
+                            android:textColor="@color/textGrey"
+                            android:textSize="13sp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:paddingTop="2dp"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginRight="10dp"
+                            android:paddingBottom="2dp"
+                            android:text="Desgin"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rounded_corner"
+                            android:textColor="@color/textGrey"
+                            android:textSize="13sp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:paddingTop="2dp"
+                            android:layout_marginRight="10dp"
+                            android:paddingBottom="2dp"
+                            android:text="Digital"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="4dp">
+            </LinearLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:elevation="14dp"
+            android:background="@drawable/border2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher"
+                    android:padding="20dp"
+                    android:id="@+id/featured_jobImgView4"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Cameron Williamson"
+                        android:textColor="@color/textColour"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:layout_marginTop="30dp"
+                        android:id="@+id/featured_jobTitleTxt4"/>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Backend Developer"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="16dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginLeft="2dp"
+                            android:id="@+id/companyTxt4"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_outline_location_on_24"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="6dp"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="London,uk"
+                            android:textColor="@color/textGrey"
+                            android:textSize="16dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginLeft="1dp"
+                            android:id="@+id/locationTxt4"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="3dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rounded_corner"
+                            android:textColor="@color/textGrey"
+                            android:textSize="13sp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:paddingTop="2dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="15dp"
+                            android:paddingBottom="2dp"
+                            android:text="App"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rounded_corner"
+                            android:textColor="@color/textGrey"
+                            android:textSize="13sp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:paddingTop="2dp"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginRight="10dp"
+                            android:paddingBottom="2dp"
+                            android:text="Desgin"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rounded_corner"
+                            android:textColor="@color/textGrey"
+                            android:textSize="13sp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:paddingTop="2dp"
+                            android:layout_marginRight="10dp"
+                            android:paddingBottom="2dp"
+                            android:text="Digital"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="4dp">
+            </LinearLayout>
+        </LinearLayout>
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:elevation="14dp"
+            android:background="@drawable/border2">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@mipmap/ic_launcher"
+                    android:padding="20dp"
+                    android:id="@+id/featured_jobImgView5"/>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Robert Fox"
+                        android:textColor="@color/textColour"
+                        android:textStyle="bold"
+                        android:textSize="16dp"
+                        android:layout_marginTop="30dp"
+                        android:id="@+id/featured_jobTitleTxt5"/>
+
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Software Engineer"
+                            android:textColor="@color/dark_blue"
+                            android:textSize="16dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginLeft="2dp"
+                            android:id="@+id/companyTxt5"/>
+
+                        <ImageView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:src="@drawable/ic_outline_location_on_24"
+                            android:layout_marginLeft="15dp"
+                            android:layout_marginTop="6dp"/>
+
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="London,uk"
+                            android:textColor="@color/textGrey"
+                            android:textSize="16dp"
+                            android:layout_marginTop="6dp"
+                            android:layout_marginLeft="1dp"
+                            android:id="@+id/locationTxt5"/>
+
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:padding="3dp">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rounded_corner"
+                            android:textColor="@color/textGrey"
+                            android:textSize="13sp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:paddingTop="2dp"
+                            android:layout_marginRight="10dp"
+                            android:layout_marginLeft="10dp"
+                            android:layout_marginBottom="15dp"
+                            android:paddingBottom="2dp"
+                            android:text="App"/>
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rounded_corner"
+                            android:textColor="@color/textGrey"
+                            android:textSize="13sp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:paddingTop="2dp"
+                            android:layout_marginBottom="15dp"
+                            android:layout_marginRight="10dp"
+                            android:paddingBottom="2dp"
+                            android:text="Desgin"/>
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:background="@drawable/rounded_corner"
+                            android:textColor="@color/textGrey"
+                            android:textSize="13sp"
+                            android:paddingLeft="15dp"
+                            android:paddingRight="15dp"
+                            android:layout_marginBottom="15dp"
+                            android:paddingTop="2dp"
+                            android:layout_marginRight="10dp"
+                            android:paddingBottom="2dp"
+                            android:text="Digital"/>
+                    </LinearLayout>
+                </LinearLayout>
+
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="4dp">
+            </LinearLayout>
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
