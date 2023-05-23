@@ -3,13 +3,15 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".MainActivity"
-    tools:ignore="SpeakableTextPresentCheck">
+    tools:ignore="SpeakableTextPresentCheck"
+    android:background="#f5f7fc">
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:orientation="vertical"
-        android:padding="10dp">
+        android:padding="20dp">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
@@ -21,55 +23,136 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Dashboard Home!"
-                android:textColor="@color/black"
-                android:textSize="34dp"
+                android:textColor="@color/textColour"
+                android:textSize="24sp"
+                android:paddingBottom="5dp"
+                android:fontFamily="sans-serif"
                 android:textStyle="bold" />
             <TextView
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:text="Ready to jump back in?"
+                android:textColor="@color/textGrey"
+                android:fontFamily="sans-serif"
                 android:textStyle="normal"
-                android:textSize="20sp"/>
+                android:textSize="15sp"/>
         </LinearLayout>
-        <include layout="@layout/job_details"/>
-
-
-
-        <TextView
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp"/>
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Your Profile Views"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="@color/black"/>
+            android:padding="10dp">
+            <androidx.cardview.widget.CardView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:cardCornerRadius="10dp">
+                <include layout="@layout/menu_button"/>
+            </androidx.cardview.widget.CardView>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="14dp"/>
+        <include layout="@layout/job_details" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="24dp"/>
 
-        <Spinner
-            android:id="@+id/spinner"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:minHeight="48dp"
-            android:background="#fff"
-            tools:ignore="SpeakableTextPresentCheck" />
-        <ImageView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:src="@drawable/download"
-            android:contentDescription="TODO" />
-        <TextView
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Notifications"
-            android:textSize="20sp"
-            android:textStyle="bold"
-            android:textColor="@color/black"/>
-        <include layout="@layout/notifications"/>
-        <TextView
+            android:padding="20dp"
+            app:cardCornerRadius="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="20dp"
+                tools:ignore="RtlSymmetry">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Your Profile Views"
+                    android:fontFamily="sans-serif"
+                    android:textSize="20sp"
+                    android:paddingTop="20dp"
+                    android:paddingStart="20dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"
+                    tools:ignore="RtlSymmetry" />
+
+                <Spinner
+                    android:id="@+id/spinner"
+                    android:layout_width="155dp"
+                    android:layout_height="45dp"
+                    android:minHeight="48dp"
+                    android:background="#fff"
+                    tools:ignore="SpeakableTextPresentCheck"
+                    android:paddingStart="20dp"/>
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/download"
+                    android:paddingStart="20dp"
+                    android:contentDescription="TODO" />
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="Recent Applicants"
-            android:textColor="@color/black"
-            android:textStyle="bold"
-            android:textSize="20sp"/>
-        <include layout="@layout/recent_applicants"/>
+            android:padding="20dp"
+            app:cardCornerRadius="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:padding="20dp">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Notifications"
+                    android:fontFamily="sans-serif"
+                    android:textSize="20sp"
+                    android:paddingStart="15dp"
+                    android:textStyle="bold"
+                    android:textColor="@color/black"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+                <include layout="@layout/notifications"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="24dp"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="20dp"
+            app:cardCornerRadius="10dp">
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:padding="20dp"
+                android:orientation="vertical">
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Recent Applicants"
+                    android:fontFamily="sans-serif"
+                    android:textColor="@color/black"
+                    android:textStyle="bold"
+                    android:textSize="20sp"/>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp"/>
+                <include layout="@layout/recent_applicants"/>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
     </LinearLayout>
 </ScrollView>

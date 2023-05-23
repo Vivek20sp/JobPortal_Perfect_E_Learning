@@ -1,791 +1,1042 @@
 <?xml version="1.0" encoding="utf-8"?>
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="wrap_content">
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:orientation="vertical">
-        <LinearLayout
+        android:orientation="vertical"
+        android:padding="10dp">
+
+        <androidx.cardview.widget.CardView
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:elevation="14dp"
-            android:background="@drawable/border2">
-
+            app:cardCornerRadius="11dp"
+            android:outlineAmbientShadowColor="@color/white">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="vertical"
+                android:elevation="14dp"
+                android:background="@drawable/border2"
+                android:padding="10dp">
 
-                <ImageView
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@mipmap/ic_launcher"
-                    android:padding="20dp"
-                    android:id="@+id/featured_jobImgView"/>
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="50dp">
+                        <ImageView
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:src="@mipmap/ic_launcher"
+                            android:id="@+id/featured_jobImgView"/>
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <TextView
+                            android:id="@+id/featured_jobTitleTxt"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="10dp"
+                            android:layout_marginTop="30dp"
+                            android:text="Darlene Robertson"
+                            android:textColor="@color/textColour"
+                            android:textSize="16dp"
+                            android:textStyle="bold" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingStart="10dp"
+                            android:paddingBottom="5dp">
+
+
+                            <TextView
+                                android:id="@+id/companyTxt"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="6dp"
+                                android:text="Ui Designer"
+                                android:textColor="@color/dark_blue"
+                                android:textSize="16dp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="6dp"
+                                android:paddingBottom="5dp"
+                                android:src="@drawable/ic_outline_location_on_24" />
+
+                            <TextView
+                                android:id="@+id/locationTxt"
+                                android:layout_width="94.5dp"
+                                android:layout_height="24dp"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginTop="6dp"
+                                android:fontFamily="sans-serif"
+                                android:text="London,uk"
+                                android:textStyle="bold"
+                                android:textColor="@color/textGrey"
+                                android:textSize="16dp" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingStart="12dp"
+                            android:paddingBottom="10dp">
+                            <include layout="@layout/money_layout">
+                            </include>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingStart="3dp"
+                            android:paddingBottom="6dp">
+
+                            <TextView
+                                android:layout_width="62.5dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/rounded_corner"
+                                android:backgroundTint="#f0f5f7"
+                                android:paddingLeft="18dp"
+                                android:paddingTop="2dp"
+                                android:paddingRight="10dp"
+                                android:paddingBottom="2dp"
+                                android:text="App"
+                                android:textStyle="bold"
+                                android:textColor="@color/textGrey"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="81.35dp"
+                                android:layout_height="30dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/rounded_corner"
+                                android:backgroundTint="#f0f5f7"
+                                android:paddingLeft="18dp"
+                                android:paddingTop="2dp"
+                                android:paddingRight="10dp"
+                                android:paddingBottom="2dp"
+                                android:text="Desgin"
+                                android:textStyle="bold"
+                                android:textColor="@color/textGrey"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="13dp">
+                            <TextView
+                                android:layout_width="78.5dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/rounded_corner"
+                                android:textColor="@color/textGrey"
+                                android:textSize="14sp"
+                                android:paddingLeft="18dp"
+                                android:paddingRight="15dp"
+                                android:layout_marginBottom="15dp"
+                                android:paddingTop="2dp"
+                                android:layout_marginRight="10dp"
+                                android:paddingBottom="2dp"
+                                android:text="Digital"
+                                android:textStyle="bold"
+                                android:backgroundTint="#f0f5f7"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Darlene Robertson"
-                        android:textColor="@color/textColour"
-                        android:textStyle="bold"
-                        android:textSize="16dp"
-                        android:layout_marginTop="30dp"
-                        android:id="@+id/featured_jobTitleTxt"/>
-
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:padding="10dp">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Ui Designer"
-                            android:textColor="@color/dark_blue"
-                            android:textSize="16dp"
-                            android:layout_marginTop="6dp"
-                            android:layout_marginLeft="2dp"
-                            android:id="@+id/companyTxt"/>
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/ic_outline_location_on_24"
-                            android:layout_marginLeft="15dp"
-                            android:layout_marginTop="6dp"/>
-
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="London,uk"
-                            android:textColor="@color/textGrey"
-                            android:textSize="16dp"
-                            android:layout_marginTop="6dp"
-                            android:layout_marginLeft="1dp"
-                            android:id="@+id/locationTxt"/>
-
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:padding="3dp">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/rounded_corner"
-                            android:textColor="@color/textGrey"
-                            android:textSize="13sp"
-                            android:paddingLeft="15dp"
-                            android:paddingRight="15dp"
-                            android:paddingTop="2dp"
-                            android:layout_marginRight="10dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginBottom="15dp"
-                            android:paddingBottom="2dp"
-                            android:text="App"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/rounded_corner"
-                            android:textColor="@color/textGrey"
-                            android:textSize="13sp"
-                            android:paddingLeft="15dp"
-                            android:paddingRight="15dp"
-                            android:paddingTop="2dp"
-                            android:layout_marginBottom="15dp"
-                            android:layout_marginRight="10dp"
-                            android:paddingBottom="2dp"
-                            android:text="Desgin"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/rounded_corner"
-                            android:textColor="@color/textGrey"
-                            android:textSize="13sp"
-                            android:paddingLeft="15dp"
-                            android:paddingRight="15dp"
-                            android:layout_marginBottom="15dp"
-                            android:paddingTop="2dp"
-                            android:layout_marginRight="10dp"
-                            android:paddingBottom="2dp"
-                            android:text="Digital"/>
-                    </LinearLayout>
+                    android:orientation="horizontal"
+                    android:padding="4dp"
+                    android:paddingStart="10dp">
+                    <include layout="@layout/recent_application_bottom"/>
                 </LinearLayout>
-
-
-
             </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="4dp">
-            </LinearLayout>
-        </LinearLayout>
-
+        </androidx.cardview.widget.CardView>
         <LinearLayout
             android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:elevation="14dp"
-            android:background="@drawable/border2">
-
+            app:cardCornerRadius="11dp">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="vertical"
+                android:elevation="14dp"
+                android:background="@drawable/border2"
+                android:padding="10dp">
 
-                <ImageView
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@mipmap/ic_launcher"
-                    android:padding="20dp"
-                    android:id="@+id/featured_jobImgView1"/>
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="50dp">
+                        <ImageView
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:src="@mipmap/ic_launcher"
+                            android:id="@+id/featured_jobImgView1"/>
+                    </androidx.cardview.widget.CardView>
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Wade Warren"
+                            android:textColor="@color/textColour"
+                            android:textStyle="bold"
+                            android:textSize="16dp"
+                            android:paddingStart="10dp"
+                            android:layout_marginTop="30dp"
+                            android:id="@+id/featured_jobTitleTxt1"/>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="10dp"
+                            android:paddingBottom="5dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Developer"
+                                android:textColor="@color/dark_blue"
+                                android:textSize="16dp"
+                                android:layout_marginTop="6dp"
+                                android:layout_marginLeft="2dp"
+                                android:id="@+id/companyTxt1"/>
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:src="@drawable/ic_outline_location_on_24"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="6dp"
+                                android:paddingBottom="5dp" />
+
+
+                            <TextView
+                                android:layout_width="94.5dp"
+                                android:layout_height="24dp"
+                                android:text="London,uk"
+                                android:textColor="@color/textGrey"
+                                android:textSize="16dp"
+                                android:textStyle="bold"
+                                android:fontFamily="sans-serif"
+                                android:layout_marginTop="6dp"
+                                android:layout_marginLeft="1dp"
+                                android:id="@+id/locationTxt1"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingStart="12dp"
+                            android:paddingBottom="10dp">
+                            <include layout="@layout/money_layout">
+                            </include>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingStart="3dp"
+                            android:paddingBottom="6dp">
+
+                            <TextView
+                                android:layout_width="62.5dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/rounded_corner"
+                                android:backgroundTint="#f0f5f7"
+                                android:paddingLeft="18dp"
+                                android:paddingTop="2dp"
+                                android:paddingRight="10dp"
+                                android:paddingBottom="2dp"
+                                android:text="App"
+                                android:textStyle="bold"
+                                android:textColor="@color/textGrey"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="81.35dp"
+                                android:layout_height="30dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/rounded_corner"
+                                android:backgroundTint="#f0f5f7"
+                                android:paddingLeft="18dp"
+                                android:paddingTop="2dp"
+                                android:paddingRight="10dp"
+                                android:paddingBottom="2dp"
+                                android:text="Desgin"
+                                android:textStyle="bold"
+                                android:textColor="@color/textGrey"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="13dp">
+                            <TextView
+                                android:layout_width="78.5dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/rounded_corner"
+                                android:textColor="@color/textGrey"
+                                android:textSize="14sp"
+                                android:paddingLeft="18dp"
+                                android:paddingRight="15dp"
+                                android:layout_marginBottom="15dp"
+                                android:paddingTop="2dp"
+                                android:layout_marginRight="10dp"
+                                android:paddingBottom="2dp"
+                                android:text="Digital"
+                                android:textStyle="bold"
+                                android:backgroundTint="#f0f5f7"/>
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Wade Warren"
-                        android:textColor="@color/textColour"
-                        android:textStyle="bold"
-                        android:textSize="16dp"
-                        android:layout_marginTop="30dp"
-                        android:id="@+id/featured_jobTitleTxt1"/>
-
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:padding="10dp">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Developer"
-                            android:textColor="@color/dark_blue"
-                            android:textSize="16dp"
-                            android:layout_marginTop="6dp"
-                            android:layout_marginLeft="2dp"
-                            android:id="@+id/companyTxt1"/>
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/ic_outline_location_on_24"
-                            android:layout_marginLeft="15dp"
-                            android:layout_marginTop="6dp"/>
-
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="London,uk"
-                            android:textColor="@color/textGrey"
-                            android:textSize="16dp"
-                            android:layout_marginTop="6dp"
-                            android:layout_marginLeft="1dp"
-                            android:id="@+id/locationTxt1"/>
-
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:padding="3dp">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/rounded_corner"
-                            android:textColor="@color/textGrey"
-                            android:textSize="13sp"
-                            android:paddingLeft="15dp"
-                            android:paddingRight="15dp"
-                            android:paddingTop="2dp"
-                            android:layout_marginRight="10dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginBottom="15dp"
-                            android:paddingBottom="2dp"
-                            android:text="App"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/rounded_corner"
-                            android:textColor="@color/textGrey"
-                            android:textSize="13sp"
-                            android:paddingLeft="15dp"
-                            android:paddingRight="15dp"
-                            android:paddingTop="2dp"
-                            android:layout_marginBottom="15dp"
-                            android:layout_marginRight="10dp"
-                            android:paddingBottom="2dp"
-                            android:text="Desgin"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/rounded_corner"
-                            android:textColor="@color/textGrey"
-                            android:textSize="13sp"
-                            android:paddingLeft="15dp"
-                            android:paddingRight="15dp"
-                            android:layout_marginBottom="15dp"
-                            android:paddingTop="2dp"
-                            android:layout_marginRight="10dp"
-                            android:paddingBottom="2dp"
-                            android:text="Digital"/>
-                    </LinearLayout>
+                    android:orientation="horizontal"
+                    android:padding="4dp"
+                    android:paddingStart="10dp">
+                    <include layout="@layout/recent_application_bottom"/>
                 </LinearLayout>
-
-
-
             </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="4dp">
-            </LinearLayout>
-        </LinearLayout>
-
-
+        </androidx.cardview.widget.CardView>
         <LinearLayout
             android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:elevation="14dp"
-            android:background="@drawable/border2">
+            app:cardCornerRadius="11dp">
 
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:background="@drawable/border2"
+                android:elevation="14dp"
+                android:orientation="vertical"
+                android:padding="10dp">
 
-                <ImageView
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@mipmap/ic_launcher"
-                    android:padding="20dp"
-                    android:id="@+id/featured_jobImgView2"/>
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="50dp">
+
+                        <ImageView
+                            android:id="@+id/featured_jobImgView2"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:src="@mipmap/ic_launcher" />
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/featured_jobTitleTxt2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:paddingStart="10dp"
+                            android:text="Leslie Alexander"
+                            android:textColor="@color/textColour"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            tools:ignore="RtlSymmetry" />
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="10dp"
+                            android:paddingBottom="5dp">
+
+                            <TextView
+                                android:id="@+id/companyTxt2"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="6dp"
+                                android:text="Digital Marketer"
+                                android:textColor="@color/dark_blue"
+                                android:textSize="16dp" />
+
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="6dp"
+                                android:paddingBottom="5dp"
+                                android:src="@drawable/ic_outline_location_on_24" />
+
+
+                            <TextView
+                                android:layout_width="94.5dp"
+                                android:layout_height="24dp"
+                                android:text="London,uk"
+                                android:textColor="@color/textGrey"
+                                android:textSize="16dp"
+                                android:textStyle="bold"
+                                android:fontFamily="sans-serif"
+                                android:layout_marginTop="6dp"
+                                android:layout_marginLeft="1dp"
+                                android:id="@+id/locationTxt7"/>
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingStart="12dp"
+                            android:paddingBottom="10dp">
+                            <include layout="@layout/money_layout">
+                            </include>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingStart="3dp"
+                            android:paddingBottom="6dp">
+
+                            <TextView
+                                android:layout_width="62.5dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/rounded_corner"
+                                android:backgroundTint="#f0f5f7"
+                                android:paddingLeft="18dp"
+                                android:paddingTop="2dp"
+                                android:paddingRight="10dp"
+                                android:paddingBottom="2dp"
+                                android:text="App"
+                                android:textStyle="bold"
+                                android:textColor="@color/textGrey"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="81.35dp"
+                                android:layout_height="30dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/rounded_corner"
+                                android:backgroundTint="#f0f5f7"
+                                android:paddingLeft="18dp"
+                                android:paddingTop="2dp"
+                                android:paddingRight="10dp"
+                                android:paddingBottom="2dp"
+                                android:text="Desgin"
+                                android:textStyle="bold"
+                                android:textColor="@color/textGrey"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="13dp">
+
+                            <TextView
+                                android:layout_width="78.5dp"
+                                android:layout_height="30dp"
+                                android:background="@drawable/rounded_corner"
+                                android:textColor="@color/textGrey"
+                                android:textSize="14sp"
+                                android:paddingLeft="18dp"
+                                android:paddingRight="15dp"
+                                android:layout_marginBottom="15dp"
+                                android:paddingTop="2dp"
+                                android:layout_marginRight="10dp"
+                                android:paddingBottom="2dp"
+                                android:text="Digital"
+                                android:textStyle="bold"
+                                android:backgroundTint="#f0f5f7"/>
+                        </LinearLayout>
+                    </LinearLayout>
+                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Leslie Alexander"
-                        android:textColor="@color/textColour"
-                        android:textStyle="bold"
-                        android:textSize="16dp"
-                        android:layout_marginTop="30dp"
-                        android:id="@+id/featured_jobTitleTxt2"/>
-
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:padding="10dp">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Digital Marketer"
-                            android:textColor="@color/dark_blue"
-                            android:textSize="16dp"
-                            android:layout_marginTop="6dp"
-                            android:layout_marginLeft="2dp"
-                            android:id="@+id/companyTxt2"/>
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/ic_outline_location_on_24"
-                            android:layout_marginLeft="15dp"
-                            android:layout_marginTop="6dp"/>
-
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="London,uk"
-                            android:textColor="@color/textGrey"
-                            android:textSize="16dp"
-                            android:layout_marginTop="6dp"
-                            android:layout_marginLeft="1dp"
-                            android:id="@+id/locationTxt2"/>
-
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:padding="3dp">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/rounded_corner"
-                            android:textColor="@color/textGrey"
-                            android:textSize="13sp"
-                            android:paddingLeft="15dp"
-                            android:paddingRight="15dp"
-                            android:paddingTop="2dp"
-                            android:layout_marginRight="10dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginBottom="15dp"
-                            android:paddingBottom="2dp"
-                            android:text="App"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/rounded_corner"
-                            android:textColor="@color/textGrey"
-                            android:textSize="13sp"
-                            android:paddingLeft="15dp"
-                            android:paddingRight="15dp"
-                            android:paddingTop="2dp"
-                            android:layout_marginBottom="15dp"
-                            android:layout_marginRight="10dp"
-                            android:paddingBottom="2dp"
-                            android:text="Desgin"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/rounded_corner"
-                            android:textColor="@color/textGrey"
-                            android:textSize="13sp"
-                            android:paddingLeft="15dp"
-                            android:paddingRight="15dp"
-                            android:layout_marginBottom="15dp"
-                            android:paddingTop="2dp"
-                            android:layout_marginRight="10dp"
-                            android:paddingBottom="2dp"
-                            android:text="Digital"/>
-                    </LinearLayout>
+                    android:orientation="horizontal"
+                    android:padding="4dp"
+                    android:paddingStart="10dp">
+                    <include layout="@layout/recent_application_bottom"/>
                 </LinearLayout>
             </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="4dp">
-            </LinearLayout>
-        </LinearLayout>
-
-
+        </androidx.cardview.widget.CardView>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:elevation="14dp"
-            android:background="@drawable/border2">
+            android:layout_height="30dp"/>
 
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="11dp">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="vertical"
+                android:elevation="14dp"
+                android:background="@drawable/border2"
+                android:padding="10dp">
 
-                <ImageView
+                <LinearLayout
                     android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:src="@mipmap/ic_launcher"
-                    android:padding="20dp"
-                    android:id="@+id/featured_jobImgView3"/>
+                    android:layout_height="320dp"
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="50dp">
+
+                        <ImageView
+                            android:id="@+id/featured_jobImgView3"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:src="@mipmap/ic_launcher" />
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="212dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/featured_jobTitleTxt3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="30dp"
+                            android:paddingStart="10dp"
+                            android:text="Floyd Miles"
+                            android:textColor="@color/textColour"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            tools:ignore="RtlSymmetry" />
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="10dp"
+                            android:paddingBottom="5dp">
+
+                            <TextView
+                                android:id="@+id/companyTxt3"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="2dp"
+                                android:layout_marginTop="6dp"
+                                android:text="Front-end Developer"
+                                android:textColor="@color/dark_blue"
+                                android:textSize="16dp" />
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="6dp"
+                                android:paddingBottom="5dp"
+                                android:src="@drawable/ic_outline_location_on_24" />
+
+
+                            <TextView
+                                android:id="@+id/locationTxt3"
+                                android:layout_width="94.5dp"
+                                android:layout_height="24dp"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginTop="6dp"
+                                android:fontFamily="sans-serif"
+                                android:text="London,uk"
+                                android:textStyle="bold"
+                                android:textColor="@color/textGrey"
+                                android:textSize="16dp" />
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingStart="12dp"
+                            android:paddingBottom="10dp">
+                            <include layout="@layout/money_layout">
+                            </include>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingStart="3dp"
+                            android:paddingBottom="6dp">
+
+                            <TextView
+                                android:layout_width="62.5dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/rounded_corner"
+                                android:backgroundTint="#f0f5f7"
+                                android:paddingLeft="18dp"
+                                android:paddingTop="2dp"
+                                android:paddingRight="10dp"
+                                android:paddingBottom="2dp"
+                                android:text="App"
+                                android:textStyle="bold"
+                                android:textColor="@color/textGrey"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="81.35dp"
+                                android:layout_height="30dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/rounded_corner"
+                                android:backgroundTint="#f0f5f7"
+                                android:paddingLeft="18dp"
+                                android:paddingTop="2dp"
+                                android:paddingRight="10dp"
+                                android:paddingBottom="2dp"
+                                android:text="Desgin"
+                                android:textStyle="bold"
+                                android:textColor="@color/textGrey"
+                                android:textSize="14sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="165dp"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="13dp">
+
+                            <TextView
+                                android:layout_width="78.5dp"
+                                android:layout_height="30dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="15dp"
+                                android:background="@drawable/rounded_corner"
+                                android:backgroundTint="#f0f5f7"
+                                android:paddingLeft="18dp"
+                                android:paddingTop="2dp"
+                                android:paddingRight="15dp"
+                                android:paddingBottom="2dp"
+                                android:text="Digital"
+                                android:textStyle="bold"
+                                android:textColor="@color/textGrey"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Floyd Miles"
-                        android:textColor="@color/textColour"
-                        android:textStyle="bold"
-                        android:textSize="16dp"
-                        android:layout_marginTop="30dp"
-                        android:id="@+id/featured_jobTitleTxt3"/>
-
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:padding="10dp">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Front-end Developer"
-                            android:textColor="@color/dark_blue"
-                            android:textSize="16dp"
-                            android:layout_marginTop="6dp"
-                            android:layout_marginLeft="2dp"
-                            android:id="@+id/companyTxt3"/>
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/ic_outline_location_on_24"
-                            android:layout_marginLeft="15dp"
-                            android:layout_marginTop="6dp"/>
-
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="London,uk"
-                            android:textColor="@color/textGrey"
-                            android:textSize="16dp"
-                            android:layout_marginTop="6dp"
-                            android:layout_marginLeft="1dp"
-                            android:id="@+id/locationTxt3"/>
-
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:padding="3dp">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/rounded_corner"
-                            android:textColor="@color/textGrey"
-                            android:textSize="13sp"
-                            android:paddingLeft="15dp"
-                            android:paddingRight="15dp"
-                            android:paddingTop="2dp"
-                            android:layout_marginRight="10dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginBottom="15dp"
-                            android:paddingBottom="2dp"
-                            android:text="App"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/rounded_corner"
-                            android:textColor="@color/textGrey"
-                            android:textSize="13sp"
-                            android:paddingLeft="15dp"
-                            android:paddingRight="15dp"
-                            android:paddingTop="2dp"
-                            android:layout_marginBottom="15dp"
-                            android:layout_marginRight="10dp"
-                            android:paddingBottom="2dp"
-                            android:text="Desgin"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/rounded_corner"
-                            android:textColor="@color/textGrey"
-                            android:textSize="13sp"
-                            android:paddingLeft="15dp"
-                            android:paddingRight="15dp"
-                            android:layout_marginBottom="15dp"
-                            android:paddingTop="2dp"
-                            android:layout_marginRight="10dp"
-                            android:paddingBottom="2dp"
-                            android:text="Digital"/>
-                    </LinearLayout>
+                    android:orientation="horizontal"
+                    android:padding="4dp"
+                    android:paddingStart="10dp">
+                    <include layout="@layout/recent_application_bottom"/>
                 </LinearLayout>
-
-
-
             </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="4dp">
-            </LinearLayout>
-        </LinearLayout>
-
+        </androidx.cardview.widget.CardView>
         <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:elevation="14dp"
-            android:background="@drawable/border2">
+            android:layout_height="30dp"/>
 
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:cardCornerRadius="11dp">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="vertical"
+                android:elevation="14dp"
+                android:background="@drawable/border2"
+                android:padding="10dp">
 
-                <ImageView
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@mipmap/ic_launcher"
-                    android:padding="20dp"
-                    android:id="@+id/featured_jobImgView4"/>
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="50dp">
+
+                        <ImageView
+                            android:id="@+id/featured_jobImgView4"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:src="@mipmap/ic_launcher" />
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="165.5dp"
+                            android:layout_height="25.6dp"
+                            android:text="Cameron Williamson"
+                            android:textColor="@color/textColour"
+                            android:textStyle="bold"
+                            android:textSize="16dp"
+                            android:paddingStart="10dp"
+                            android:layout_marginTop="30dp"
+                            android:id="@+id/featured_jobTitleTxt4"/>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingStart="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Backend Developer"
+                                android:textColor="@color/dark_blue"
+                                android:textSize="16dp"
+                                android:layout_marginTop="6dp"
+                                android:layout_marginLeft="2dp"
+                                android:id="@+id/companyTxt4"/>
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="6dp"
+                                android:paddingBottom="5dp"
+                                android:src="@drawable/ic_outline_location_on_24" />
+
+
+                            <TextView
+                                android:id="@+id/locationTxt5"
+                                android:layout_width="94.5dp"
+                                android:layout_height="24dp"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginTop="6dp"
+                                android:fontFamily="sans-serif"
+                                android:text="London,uk"
+                                android:textStyle="bold"
+                                android:textColor="@color/textGrey"
+                                android:textSize="16dp" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingStart="12dp"
+                            android:paddingBottom="10dp">
+                            <include layout="@layout/money_layout">
+                            </include>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+
+                            <TextView
+                                android:layout_width="62.5dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/rounded_corner"
+                                android:backgroundTint="#f0f5f7"
+                                android:paddingLeft="18dp"
+                                android:paddingTop="2dp"
+                                android:textStyle="bold"
+                                android:paddingRight="10dp"
+                                android:paddingBottom="2dp"
+                                android:text="App"
+                                android:textColor="@color/textGrey"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="81.35dp"
+                                android:layout_height="30dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/rounded_corner"
+                                android:backgroundTint="#f0f5f7"
+                                android:paddingLeft="18dp"
+                                android:paddingTop="2dp"
+                                android:paddingRight="10dp"
+                                android:textStyle="bold"
+                                android:paddingBottom="2dp"
+                                android:text="Desgin"
+                                android:textColor="@color/textGrey"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="165dp"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="13dp">
+
+                            <TextView
+                                android:layout_width="78.5dp"
+                                android:layout_height="30dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="15dp"
+                                android:background="@drawable/rounded_corner"
+                                android:backgroundTint="#f0f5f7"
+                                android:paddingLeft="18dp"
+                                android:paddingTop="2dp"
+                                android:textStyle="bold"
+                                android:paddingRight="15dp"
+                                android:paddingBottom="2dp"
+                                android:text="Digital"
+                                android:textColor="@color/textGrey"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Cameron Williamson"
-                        android:textColor="@color/textColour"
-                        android:textStyle="bold"
-                        android:textSize="16dp"
-                        android:layout_marginTop="30dp"
-                        android:id="@+id/featured_jobTitleTxt4"/>
-
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:padding="10dp">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Backend Developer"
-                            android:textColor="@color/dark_blue"
-                            android:textSize="16dp"
-                            android:layout_marginTop="6dp"
-                            android:layout_marginLeft="2dp"
-                            android:id="@+id/companyTxt4"/>
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/ic_outline_location_on_24"
-                            android:layout_marginLeft="15dp"
-                            android:layout_marginTop="6dp"/>
-
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="London,uk"
-                            android:textColor="@color/textGrey"
-                            android:textSize="16dp"
-                            android:layout_marginTop="6dp"
-                            android:layout_marginLeft="1dp"
-                            android:id="@+id/locationTxt4"/>
-
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:padding="3dp">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/rounded_corner"
-                            android:textColor="@color/textGrey"
-                            android:textSize="13sp"
-                            android:paddingLeft="15dp"
-                            android:paddingRight="15dp"
-                            android:paddingTop="2dp"
-                            android:layout_marginRight="10dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginBottom="15dp"
-                            android:paddingBottom="2dp"
-                            android:text="App"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/rounded_corner"
-                            android:textColor="@color/textGrey"
-                            android:textSize="13sp"
-                            android:paddingLeft="15dp"
-                            android:paddingRight="15dp"
-                            android:paddingTop="2dp"
-                            android:layout_marginBottom="15dp"
-                            android:layout_marginRight="10dp"
-                            android:paddingBottom="2dp"
-                            android:text="Desgin"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/rounded_corner"
-                            android:textColor="@color/textGrey"
-                            android:textSize="13sp"
-                            android:paddingLeft="15dp"
-                            android:paddingRight="15dp"
-                            android:layout_marginBottom="15dp"
-                            android:paddingTop="2dp"
-                            android:layout_marginRight="10dp"
-                            android:paddingBottom="2dp"
-                            android:text="Digital"/>
-                    </LinearLayout>
+                    android:orientation="horizontal"
+                    android:padding="4dp"
+                    android:paddingStart="10dp">
+                    <include layout="@layout/recent_application_bottom"/>
                 </LinearLayout>
-
-
-
             </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="4dp">
-            </LinearLayout>
-        </LinearLayout>
-
-
-
+        </androidx.cardview.widget.CardView>
         <LinearLayout
             android:layout_width="match_parent"
+            android:layout_height="30dp"/>
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:orientation="vertical"
-            android:elevation="14dp"
-            android:background="@drawable/border2">
-
+            app:cardCornerRadius="11dp">
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                android:orientation="horizontal">
+                android:orientation="vertical"
+                android:elevation="14dp"
+                android:background="@drawable/border2"
+                android:padding="10dp">
 
-                <ImageView
+                <LinearLayout
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:src="@mipmap/ic_launcher"
-                    android:padding="20dp"
-                    android:id="@+id/featured_jobImgView5"/>
+                    android:orientation="vertical"
+                    android:padding="10dp">
+
+                    <androidx.cardview.widget.CardView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:cardCornerRadius="50dp">
+
+                        <ImageView
+                            android:id="@+id/featured_jobImgView5"
+                            android:layout_width="90dp"
+                            android:layout_height="90dp"
+                            android:src="@mipmap/ic_launcher" />
+                    </androidx.cardview.widget.CardView>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+                        <TextView
+                            android:layout_width="85.5dp"
+                            android:layout_height="25.5dp"
+                            android:text="Robert Fox"
+                            android:textColor="@color/textColour"
+                            android:textStyle="bold"
+                            android:textSize="18dp"
+                            android:paddingStart="10dp"
+                            android:layout_marginTop="30dp"
+                            android:id="@+id/featured_jobTitleTxt5"/>
+
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingStart="10dp">
+
+                            <TextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:text="Software Engineer"
+                                android:textColor="@color/dark_blue"
+                                android:textSize="16dp"
+                                android:layout_marginTop="6dp"
+                                android:layout_marginLeft="2dp"
+                                android:id="@+id/companyTxt5"/>
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="15dp"
+                                android:layout_marginTop="6dp"
+                                android:paddingBottom="5dp"
+                                android:src="@drawable/ic_outline_location_on_24" />
+
+
+                            <TextView
+                                android:id="@+id/locationTxt6"
+                                android:layout_width="94.5dp"
+                                android:layout_height="24dp"
+                                android:layout_marginLeft="1dp"
+                                android:layout_marginTop="6dp"
+                                android:fontFamily="sans-serif"
+                                android:text="London,uk"
+                                android:textStyle="bold"
+                                android:textColor="@color/textGrey"
+                                android:textSize="16dp" />
+
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:paddingStart="12dp"
+                            android:paddingBottom="10dp">
+                            <include layout="@layout/money_layout">
+                            </include>
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal"
+                            android:padding="5dp">
+                            <TextView
+                                android:layout_width="62.5dp"
+                                android:layout_height="30dp"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/rounded_corner"
+                                android:backgroundTint="#f0f5f7"
+                                android:paddingLeft="18dp"
+                                android:paddingTop="2dp"
+                                android:paddingRight="10dp"
+                                android:paddingBottom="2dp"
+                                android:text="App"
+                                android:textStyle="bold"
+                                android:textColor="@color/textGrey"
+                                android:textSize="14sp" />
+
+                            <TextView
+                                android:layout_width="81.35dp"
+                                android:layout_height="30dp"
+                                android:layout_marginRight="10dp"
+                                android:background="@drawable/rounded_corner"
+                                android:backgroundTint="#f0f5f7"
+                                android:paddingLeft="18dp"
+                                android:paddingTop="2dp"
+                                android:paddingRight="10dp"
+                                android:paddingBottom="2dp"
+                                android:text="Desgin"
+                                android:textStyle="bold"
+                                android:textColor="@color/textGrey"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                        <LinearLayout
+                            android:layout_width="165dp"
+                            android:layout_height="wrap_content"
+                            android:paddingStart="13dp">
+
+                            <TextView
+                                android:layout_width="78.5dp"
+                                android:layout_height="30dp"
+                                android:layout_marginRight="10dp"
+                                android:layout_marginBottom="15dp"
+                                android:background="@drawable/rounded_corner"
+                                android:backgroundTint="#f0f5f7"
+                                android:paddingLeft="18dp"
+                                android:paddingTop="2dp"
+                                android:paddingRight="15dp"
+                                android:paddingBottom="2dp"
+                                android:text="Digital"
+                                android:textStyle="bold"
+                                android:textColor="@color/textGrey"
+                                android:textSize="14sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+
+
+
+                </LinearLayout>
 
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:orientation="vertical">
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Robert Fox"
-                        android:textColor="@color/textColour"
-                        android:textStyle="bold"
-                        android:textSize="16dp"
-                        android:layout_marginTop="30dp"
-                        android:id="@+id/featured_jobTitleTxt5"/>
-
-
-                    <LinearLayout
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:padding="10dp">
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="Software Engineer"
-                            android:textColor="@color/dark_blue"
-                            android:textSize="16dp"
-                            android:layout_marginTop="6dp"
-                            android:layout_marginLeft="2dp"
-                            android:id="@+id/companyTxt5"/>
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:src="@drawable/ic_outline_location_on_24"
-                            android:layout_marginLeft="15dp"
-                            android:layout_marginTop="6dp"/>
-
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:text="London,uk"
-                            android:textColor="@color/textGrey"
-                            android:textSize="16dp"
-                            android:layout_marginTop="6dp"
-                            android:layout_marginLeft="1dp"
-                            android:id="@+id/locationTxt5"/>
-
-                    </LinearLayout>
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:padding="3dp">
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/rounded_corner"
-                            android:textColor="@color/textGrey"
-                            android:textSize="13sp"
-                            android:paddingLeft="15dp"
-                            android:paddingRight="15dp"
-                            android:paddingTop="2dp"
-                            android:layout_marginRight="10dp"
-                            android:layout_marginLeft="10dp"
-                            android:layout_marginBottom="15dp"
-                            android:paddingBottom="2dp"
-                            android:text="App"/>
-
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/rounded_corner"
-                            android:textColor="@color/textGrey"
-                            android:textSize="13sp"
-                            android:paddingLeft="15dp"
-                            android:paddingRight="15dp"
-                            android:paddingTop="2dp"
-                            android:layout_marginBottom="15dp"
-                            android:layout_marginRight="10dp"
-                            android:paddingBottom="2dp"
-                            android:text="Desgin"/>
-                        <TextView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:background="@drawable/rounded_corner"
-                            android:textColor="@color/textGrey"
-                            android:textSize="13sp"
-                            android:paddingLeft="15dp"
-                            android:paddingRight="15dp"
-                            android:layout_marginBottom="15dp"
-                            android:paddingTop="2dp"
-                            android:layout_marginRight="10dp"
-                            android:paddingBottom="2dp"
-                            android:text="Digital"/>
-                    </LinearLayout>
+                    android:orientation="horizontal"
+                    android:padding="4dp"
+                    android:paddingBottom="5dp"
+                    android:paddingStart="10dp">
+                    <include layout="@layout/recent_application_bottom"/>
                 </LinearLayout>
-
-
-
             </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:orientation="horizontal"
-                android:padding="4dp">
-            </LinearLayout>
-        </LinearLayout>
+        </androidx.cardview.widget.CardView>
     </LinearLayout>
 </ScrollView>
